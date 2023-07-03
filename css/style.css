@@ -1,0 +1,304 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+p{
+  color: #748182;
+}
+.section-header{
+  font-weight: 900;
+  font-size: 38px;
+}
+.bg-gray{
+  background-color: #f7f7f7;
+}
+.bg-item{
+  background-color: #fff;
+}
+.section-padding{
+  padding: 100px 0;
+}
+ul{
+  list-style-type: none;
+}
+/* ---------------------------------------- */
+nav{
+  background-color: #fff;
+}
+nav ul li a{
+  color: #343434 !important;
+}
+/* ------------------------------------------- */
+header{
+  background-image: url(../imgs/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.overlay{
+  background-color: rgb(0 0 0 / 65%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+header  .social a{
+  color: white;
+  background-color: rgb(0 0 0/.3);
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+header  .social a i{
+  transition: .3s;
+  font-size: 18px;
+}
+header  .social a .fa-facebook:hover,
+header  .social a .fa-twitter:hover,
+header  .social a .fa-linkedin:hover{
+  color:#0d6efd;
+}
+header  .social a .fa-youtube:hover{
+  color:red;
+}
+header  .social a .fa-github:hover{
+  color:orange;
+}
+/* ----------------------------- */
+.about-section .container .image::after{
+  content: '';
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 70%;
+  height: 70%;
+  left: -20px;
+  bottom: -20px;
+  z-index: -1;
+  background-repeat: repeat;
+}
+.about-section .cv-btn{
+  transition: .4s;
+  font-size: 13px;
+}
+.about-section .cv-btn:hover{
+  background-color: white;
+  color: black;
+}
+.about-section .btn-white{
+  font-size: 13px;
+  border: #212529 1px solid;
+  transition: .3s;
+}
+.about-section .btn-white:hover{
+  background-color: #212529;
+  color: white;
+}
+/* ------------------------- */
+.services-section .col-lg-4 .fa-solid{
+  width: 65px;
+  height: 65px;
+  background-color: #f4f4f4;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.services-section .col-lg-4:hover .fa-solid{
+  background-color: #212529;
+  color: white;
+}
+.services-section .col-lg-4 p{
+  font-size: 15px ;
+}
+/* ------------------------------------- */
+.portofolio .img-bg{
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .4s;
+  margin-top: 10px;
+}
+.portofolio .col-lg-4:hover .img-bg{
+  opacity: 1;
+  margin-top:0 ;
+}
+.portofolio .col-lg-4 .img-bg h6{
+  margin-bottom: 15px;
+  transition: .3s;
+}
+.portofolio .col-lg-4:hover .img-bg h6{
+  margin-bottom: 10px;
+}
+.portofolio .img-bg div i{
+  background-color: black;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 13px;
+  border: black 1px solid;
+  transition: .3s;
+  cursor: pointer;
+}
+.portofolio .img-bg div i:hover{
+  background-color: white;
+  color: black;
+}
+/* ------------------------------- */
+.testimonials .carousel-indicators button{
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #d6d6d6;
+}
+.testimonials .carousel-item h6{
+  margin-bottom: 0;
+}
+/* --------------------------------------- */
+.team-section .row .col-lg-4 .text{
+  background-color: rgba(52, 52, 52,.8);
+  padding: 25px;
+  color: #fff;
+}
+.team-section .row .col-lg-4 .text p{
+  color: #fff;
+}
+.team-section .col-lg-4 .image img{
+  transition: .4s;
+}
+.team-section .col-lg-4 .image:hover img{
+  transform: scale(1.2);
+}
+.team-section .img-bg{
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) scale(.5,.5) rotateY(180deg);
+  opacity: 0;
+  transition: .6s;
+}
+.team-section .col-lg-4:hover .img-bg{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1) rotateY(0);
+}
+.team-section .img-bg div i{
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  border: black 1px solid;
+  transition: .3s;
+  cursor: pointer;
+}
+.team-section .img-bg div i:hover{
+  background-color: white;
+  color: black;
+}
+/* --------------------------------------------- */
+.contact-section .boxes > div {
+  background-color: #f4f4f4;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.contact-section .boxes:hover > div {
+  background-color: #212529;
+  color: white;
+}
+@media (min-width:1200px) {
+  .contact-section .container{
+    padding:0 130px;
+  }
+}
+.contact-section .form input,
+.contact-section .form textarea{
+  box-shadow: none;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+.contact-section .form button{
+  background-color: #1c1c1c;
+  width: fit-content;
+  color: #eee;
+  font-size: 13px;
+  margin-left: 12px;
+  padding: 8px 35px;
+  transition: .3s;
+  border: 1px solid #1c1c1c;
+}
+.contact-section .form button:hover{
+  color: #1c1c1c;
+  background-color: #fff;
+}
+/* ---------------------------- */
+footer{
+  background-color: #1c1c1c;
+}
+footer p{
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+footer h6{
+  padding-top: 15px;
+  color: #dc3545;
+  text-align: center;
+  font-size: 15px;
+}
+@media (max-width:768){
+  footer p{
+    font-size: 13px;
+    
+  }
+  footer h6{
+    font-size: 13px;
+  }
+}
