@@ -35,7 +35,25 @@ nav{
 }
 nav ul li a{
   color: #343434 !important;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 2px !important;
 }
+nav ul li a:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #1c1c1c;
+  transition: .5s;
+}
+nav ul li a.active:after{
+  width: 100%;
+}
+
 /* ------------------------------------------- */
 header{
   background-image: url(../imgs/bg.jpg);
@@ -127,7 +145,32 @@ header  .social a .fa-github:hover{
   font-size: 15px ;
 }
 /* ------------------------------------- */
-.portofolio .img-bg{
+.portfolio .nav-pills .nav-link.active {
+  color: black;
+  background-color: transparent;
+}
+.portfolio .nav-pills .nav-link.active::after {
+  width: 100%;
+}
+.portfolio .nav-link {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 4px;
+}
+.portfolio .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  transition: .3s;
+}
+.portfolio .img-bg{
   position: absolute;
   width: 96%;
   height: 96%;
@@ -143,18 +186,18 @@ header  .social a .fa-github:hover{
   transition: .4s;
   margin-top: 10px;
 }
-.portofolio .col-lg-4:hover .img-bg{
+.portfolio .col-lg-4:hover .img-bg{
   opacity: 1;
   margin-top:0 ;
 }
-.portofolio .col-lg-4 .img-bg h6{
+.portfolio .col-lg-4 .img-bg h6{
   margin-bottom: 15px;
   transition: .3s;
 }
-.portofolio .col-lg-4:hover .img-bg h6{
+.portfolio .col-lg-4:hover .img-bg h6{
   margin-bottom: 10px;
 }
-.portofolio .img-bg div i{
+.portfolio .img-bg div i{
   background-color: black;
   color: white;
   width: 30px;
@@ -168,7 +211,7 @@ header  .social a .fa-github:hover{
   transition: .3s;
   cursor: pointer;
 }
-.portofolio .img-bg div i:hover{
+.portfolio .img-bg div i:hover{
   background-color: white;
   color: black;
 }

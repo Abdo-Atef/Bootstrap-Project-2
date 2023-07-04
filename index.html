@@ -10,17 +10,17 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container px-md-5">
       <a class="navbar-brand fw-bold" href="#">DANIELS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto gap-3">
+        <ul class="navbar-nav ms-auto gap-4">
           <li class="nav-item">
-            <a class="nav-link" href="#Home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#About">About</a>
@@ -96,6 +96,7 @@
       </div>
     </div> 
   </div>
+  <!----------------------------------------------------------------------------------------------------------------------->
   <div class="services-section section-padding bg-gray" id="Services">
     <div class="container px-md-5">
       <h2 class="section-header text-center">Services.</h2>
@@ -145,91 +146,202 @@
       </div>
     </div>
   </div>
-  <div class="portofolio section-padding" id="Works">
+  <!-------------------------------------------------------------------------------------------------->
+  <div class="portfolio section-padding" id="Works">
     <div class="container px-md-5">
-      <h2 class="section-header text-center">Portofolio.</h2>
-    <ul class="types d-flex gap-4 fw-bold justify-content-center mt-5 p-0 mb-5">
-      <li>All</li>
-      <li>Brands</li>
-      <li>Design</li>
-      <li>Graphic</li>
-    </ul>
-    <div class="row gy-4 gx-md-3 ">
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/1.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
+      <h2 class="section-header text-center mb-5">portfolio.</h2>
+      <ul class="nav nav-pills mb-5 justify-content-center gap-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-Brand-tab" data-bs-toggle="pill" data-bs-target="#pills-Brand" type="button" role="tab" aria-controls="pills-Brand" aria-selected="false">Brand</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design" type="button" role="tab" aria-controls="pills-Design" aria-selected="false">Design</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-Graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphic" type="button" role="tab" aria-controls="pills-Graphic" aria-selected="false">Graphic</button>
+        </li> 
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+          <div class="row gy-4 gx-md-3 ">
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/1.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
             </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/2.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/3.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/4.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/5.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/6.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>     
           </div>
-        </div>       
+        </div>
+        <div class="tab-pane fade" id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab" tabindex="0">
+          <div class="row gy-4 gx-md-3 ">
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/4.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/6.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>     
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab" tabindex="0">
+          <div class="row gy-4 gx-md-3 ">
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/2.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="position-relative">
+                <img src="imgs/portfolio/3.jpg" alt="" class="img-fluid">
+                <div class="img-bg">
+                  <h6 class="fw-semibold">Web Design</h6>
+                  <div class="icon d-flex justify-content-center gap-1">
+                    <i class="fa-solid fa-link-slash"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+              </div>       
+            </div>
+
+        </div>
+        </div>
+        <div class="tab-pane fade" id="pills-Graphic" role="tabpanel" aria-labelledby="pills-Graphic-tab" tabindex="0">
+        <div class="row gy-4 gx-md-3 "> 
+          <div class="col-lg-4 col-md-6">
+            <div class="position-relative">
+              <img src="imgs/portfolio/3.jpg" alt="" class="img-fluid">
+              <div class="img-bg">
+                <h6 class="fw-semibold">Web Design</h6>
+                <div class="icon d-flex justify-content-center gap-1">
+                  <i class="fa-solid fa-link-slash"></i>
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>       
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="position-relative">
+              <img src="imgs/portfolio/4.jpg" alt="" class="img-fluid">
+              <div class="img-bg">
+                <h6 class="fw-semibold">Web Design</h6>
+                <div class="icon d-flex justify-content-center gap-1">
+                  <i class="fa-solid fa-link-slash"></i>
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>       
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="position-relative">
+              <img src="imgs/portfolio/5.jpg" alt="" class="img-fluid">
+              <div class="img-bg">
+                <h6 class="fw-semibold">Web Design</h6>
+                <div class="icon d-flex justify-content-center gap-1">
+                  <i class="fa-solid fa-link-slash"></i>
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>       
+          </div>    
+        </div>
+        </div> 
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/2.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-        </div>       
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/3.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-        </div>       
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/4.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-        </div>       
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/5.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-        </div>       
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="position-relative">
-          <img src="imgs/portfolio/6.jpg" alt="" class="img-fluid">
-          <div class="img-bg">
-            <h6 class="fw-semibold">Web Design</h6>
-            <div class="icon d-flex justify-content-center gap-1">
-              <i class="fa-solid fa-link-slash"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-        </div>       
-      </div>     
-    </div>
     </div>
   </div>
+  <!-------------------------------------------------------------------------------------------->
   <div class="testimonials section-padding bg-gray" id="Clients">
     <div class="container">
       <h2 class="section-header text-center mb-4 pb-5">Testimonials.</h2>
